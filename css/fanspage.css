@@ -1,0 +1,96 @@
+         #tamvan-back {
+         display: none;
+         background: rgba(0, 0, 0, 0.6);
+         width: 100%;
+         height: 100%;
+         position: fixed;
+         top: 0;
+         left: 0;
+         z-index: 99999
+     }
+     
+     #tamvan-exit {
+         width: 100%;
+         height: 100%
+     }
+     
+     .tamvan-box-inner {
+         width: 266px;
+         position: relative;
+         mas_tamvan: block;
+         padding: 20px 0 0;
+         margin-left: 20px;
+         margin-right: -5px;
+         text-align: center
+     }
+     
+     #tamvan-close {
+         cursor: pointer;
+         position: absolute;
+         top: 1px;
+         right: -45px;
+         font-size: 23px;
+         font-weight: 700;
+         color: #000;
+         z-index: 99999;
+         mas_tamvan: inline-block;
+         line-height: 18px;
+         height: 23px;
+         width: 23px
+     }
+     
+     #tamvan-close:hover {
+         color: #06c
+     }
+     
+     #tamvan-box {
+         min-width: 333px;
+         min-height: 230px;
+         position: absolute;
+         top: 60%;
+         left: 50%;
+         margin: -220px 0 0 -170px;
+         -webkit-box-shadow: 0 0 16px gray;
+         -moz-box-shadow: 0 0 16px gray;
+         box-shadow: 0 0 16px gray;
+         -webkit-border-radius: 8px;
+         -moz-border-radius: 8px;
+         border-radius: 8px;
+         background: whitesmoke;
+         max-height: 253px
+     }
+     
+     @media (max-width: 767px) {
+         .mas_tamvan {
+             position: fixed;
+             top: 50%;
+             left: 50%
+         }
+         #tamvan-box {
+             min-width: 333px;
+             min-height: 230px;
+             transform: scale(0.67);
+             -webkit-transform: scale(0.67);
+             -o-transform: scale(0.67);
+             -ms-transform: scale(0.67);
+             -moz-transform: scale(0.67)
+         }
+         .tamvan-box-inner {
+             width: 266px
+         }
+         #tamvan-close {
+             right: -45px
+         }
+     }
+     
+     #tamvan-back iframe {
+         transform: scale(0.920);
+         -webkit-transform: scale(0.920);
+         -o-transform: scale(0.920);
+         -ms-transform: scale(0.920);
+         -moz-transform: scale(0.920);
+         transform-origin: top left;
+         -webkit-transform-origin: top left;
+         -o-transform-origin: top left;
+         -ms-transform-origin: top left;
+         -moz-transform-origin: top left

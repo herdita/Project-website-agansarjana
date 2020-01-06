@@ -1,0 +1,523 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+    <title>About-AganSarjana</title>
+
+    <!-- Bootstrap -->
+    <link href="../css/bootstrap.min.css" rel="stylesheet">
+    <!-- icon-tambahan -->
+    <link href="../css/font-awesome.css" rel="stylesheet">
+    <!-- navigator -->
+    <link href="../css/index.css" rel="stylesheet">
+    <!-- content -->
+    <link href="../css/artikel.css" rel="stylesheet">
+    <!-- fanspage-facebook -->
+    <link href="../css/fanspage.css" rel="stylesheet">
+
+
+    <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/html5shiv/3.7.3/html5shiv.min.js"></script>
+      <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+    <![endif]-->
+</head>
+<style id="jsbin-css">
+    /* Reusing bootstrap 3 panel CSS */
+    
+    .well-edit {
+        background: rgba(233, 233, 233, 0.3);
+        border: transparent;
+        margin-left: 0px;
+        margin-right: 0px;
+    }
+    
+    .panel {
+        background-color: #FFFFFF;
+        border: 1px solid rgba(0, 0, 0, 0);
+        border-radius: 4px 4px 4px 4px;
+        box-shadow: 0 1px 1px rgba(0, 0, 0, 0.05);
+        margin-bottom: 20px;
+    }
+    
+    .panel-primary {
+        border-color: #428BCA;
+    }
+    
+    .panel-primary>.panel-heading {
+        background-color: #428BCA;
+        border-color: #428BCA;
+        color: #FFFFFF;
+    }
+    
+    .panel-heading {
+        border-bottom: 1px solid rgba(0, 0, 0, 0);
+        border-top-left-radius: 3px;
+        border-top-right-radius: 3px;
+        padding: 10px 15px;
+    }
+    
+    .panel-title {
+        font-size: 16px;
+        margin-bottom: 0;
+        margin-top: 0;
+    }
+    
+    .panel-body:before,
+    .panel-body:after {
+        content: " ";
+        display: table;
+    }
+    
+    .panel-body:before,
+    .panel-body:after {
+        content: " ";
+        display: table;
+    }
+    
+    .panel-body:after {
+        clear: both;
+    }
+    
+    .panel-body {
+        padding: 15px;
+    }
+    
+    .panel-footer {
+        background-color: #F5F5F5;
+        border-bottom-left-radius: 3px;
+        border-bottom-right-radius: 3px;
+        border-top: 1px solid #DDDDDD;
+        padding: 10px 15px;
+    }
+    /* CSS from v3 snipp */
+    
+    .user-row {
+        margin-bottom: 14px;
+    }
+    
+    .user-row:last-child {
+        margin-bottom: 0;
+    }
+    
+    .dropdown-user {
+        margin: 13px 0;
+        padding: 5px;
+        height: 100%;
+    }
+    
+    .dropdown-user:hover {
+        cursor: pointer;
+    }
+    
+    .table-user-information>tbody>tr {
+        border-top: 1px solid rgb(221, 221, 221);
+    }
+    
+    .table-user-information>tbody>tr:first-child {
+        border-top: 0;
+    }
+    
+    .table-user-information>tbody>tr>td {
+        border-top: 0;
+    }
+    
+    @media (max-width: 767px) {
+        .font-ukuran {
+            font-size: 13px;
+        }
+    }
+</style>
+
+<body>
+    <!-- navbar -->
+    <div class="container">
+        <nav class="navbar navbar-default navbar-default1">
+
+            <!-- navbar header -->
+            <div class="navbar-header opacity">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#list">
+                    Menu &nbsp <span class="glyphicon glyphicon-th-list">
+                    </span>
+                </button>
+                <a href="#" class="navbar-brand"><img src="../img/logo.jpg" class="img-responsive img-logo" align="left">
+                    <div class="navbar-brand text-judul"> AganSarjana</div>
+                </a>
+            </div>
+
+            <!-- isi header -->
+            <div class="collapse navbar-collapse" id="list">
+                <ul class="nav navbar-nav navbar-right">
+                    <li><a href="#"><span class="letak glyphicon glyphicon-education icon-ukuran"></span></a></li>
+                </ul>
+                <form class="navbar-form navbar-right" role="search">
+                    <div class="form-group">
+                        <input type="text" class="form-control form-control1" placeholder="Type to search">
+                        <button type="submit" class="btn btn-link btn-search"><span class=" glyphicon glyphicon-search icon-ukuran1"></span></button>
+                    </div>
+                </form>
+
+                <div class="clearfix"></div>
+                <ul class="nav navbar-nav navbar-right text-navbar">
+                    <li class="visible-xs"><a href="index.html"><span class="glyphicon glyphicon-fire"></span> Populer </a>
+                        <hr class="hr-ukuran visible-xs opacity1">
+                    </li>
+                    <li class="visible-xs"><a href="profil.html"><span class="glyphicon glyphicon-thumbs-up"></span> Rekomendasi </a>
+                        <hr class="hr-ukuran visible-xs opacity1">
+                    </li>
+                    <li><a href="#about"><span class="fa fa-commenting"></span> Obrolan </a>
+                        <hr class="hr-ukuran visible-xs opacity1">
+                    </li>
+                    <li class="dropdown visible-xs"><a href="#" class="dropdown-toggel" data-toggle="dropdown"><span class="glyphicon glyphicon-list-alt cover"></span>  Kategori <b class="caret"></b></a>
+                        <ul class="dropdown-menu">
+                            <li>
+                                <a href="pemogramman/pemogramman.html"> <i class="fa fa-file-code-o icon-fa1"></i> pemogramman</a>
+                            </li>
+                            <li>
+                                <a href="pengetahuan/pengetahuan.html"> <i class="fa fa-lightbulb-o icon-fa3" aria-hidden="true"></i> Pengetahuan </a>
+                            </li>
+                            <li>
+                                <a href="informasi/informasi.html"> &nbsp<i class="fa fa-info icon-fa4" aria-hidden="true"></i> Informasi </a>
+                            </li>
+                            <li>
+                                <a href="tips-trik/tips-trik.html"> <i class="fa fa-paper-plane-o icon-fa6" aria-hidden="true"></i> Tips-Trik </a>
+                            </li>
+                            <li>
+                                <a href="produk/produk.html"> <i class="fa fa-file-image-o icon-fa2" aria-hidden="true"></i> Produk </a>
+                            </li>
+                            <li>
+                                <a href="makalah/makalah.html"> <i class="fa fa-file-text-o icon-fa5" aria-hidden="true"></i> Makalah & Ebook </a>
+                            </li>
+                        </ul>
+                        <hr class="hr-ukuran visible-xs opacity1">
+                    </li>
+                    <li><a href="about.html"><span class="glyphicon glyphicon-user"></span> About</a></li>
+                </ul>
+            </div>
+            <hr class="visible-xs hr-ukuran">
+        </nav>
+    </div>
+
+
+
+    <!-- navtab drag-->
+    <div class="container container-xs">
+        <div class="row">
+            <div class="col-md-12">
+                <div class="draggable-container">
+                    <ul class="nav nav-tabs navbar-default navbar-default2 draggable draggable" role="tablist">
+                        <li><a href="../index.html">Home</a></li>
+                        <li><a href="pemogramman/pemogramman.html">pemogramman</a></li>
+                        <li><a href="pengetahuan/pengetahuan.html">Pengetahuan</a></li>
+                        <li><a href="informasi/informasi.html">Informasi</a></li>
+                        <li><a href="tips-trik/tips-trik.html">Tips-Trik</a></li>
+                        <li><a href="produk/produk.html">Produk</a></li>
+                        <li><a href="makalah/makalah.html">Makalah & Ebook</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+
+    <!-- dua bagian -->
+    <div class="container div-content div-articles">
+        <div class="row">
+
+
+            <!-- sisi kiri -->
+            <div class="col-lg-8 col-md-8 col-sm-8">
+                <div class="row well well-edit">
+                    <div class="col-md-12">
+                        <h3 class="text-center"> About AganSarjana </h3><br>
+                        <div class="row user-row">
+                            <div class="col-md-2 col-xs-4">
+                                <img class="img-circle img-responsive" src="../img/about/herdita.jpg" alt="User Pic">
+                            </div>
+                            <div class="col-md-10 col-xs-8">
+                                <strong>AganSarjana</strong><br>
+                                <span class="text-muted"> Development Website Administrator</span>
+                            </div>
+                            <div class="col-md-1 dropdown-user" data-for=".agan">
+                                <i class="fa fa-chevron-down text-muted"></i>
+                            </div>
+                        </div>
+                        <div class="row user-infos agan">
+                            <div class="col-md-10 col-md-offset-1">
+                                <div class="panel panel-primary">
+                                    <div class="panel-heading">
+                                        <h3 class="panel-title">User information</h3>
+                                    </div>
+                                    <div class="panel-body">
+                                        <div class="row">
+                                            <div class="col-md-3 col-xs-5">
+                                                <img class="img-circle img-responsive" src="../img/about/herdita.jpg" alt="User Pic">
+                                            </div>
+                                            <div class="col-md-9"><br>
+                                                <strong>AganSarjana</strong><br>
+                                                <table class="table table-condensed table-responsive table-user-information font-ukuran">
+                                                    <tbody>
+                                                        <tr>
+                                                            <td>Name :</td>
+                                                            <td>Herdita Permana</td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td>User Level :</td>
+                                                            <td>Development Web Administrator</td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td>Collage :</td>
+                                                            <td>Universitas Komputer Indonesia <small>(UNIKOM)</small></td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td>majors :</td>
+                                                            <td>Teknik Informatika</td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td>Date of Birth :</td>
+                                                            <td>21 Mei 1997</td>
+                                                        </tr>
+                                                    </tbody>
+                                                </table>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="panel-footer">
+                                        <div class="row">
+                                            <div class="col-md-12">
+                                                <div class="row">
+                                                    <div class="col-md-5 col-md-offset-7">
+                                                        <div>
+                                                            <ul class="social-network social-circle">
+                                                                <li><a href="https://www.facebook.com/herdita.doank?fref=ts" class="icoFacebook ground" title="Facebook"><i class="fa fa-facebook"></i></a></li>
+                                                                <li><a href="#" class="icoTwitter ground" title="Twitter"><i class="fa fa-twitter"></i></a></li>
+                                                                <li><a href="https://www.instagram.com/herditapermana/" class="icoInstagram ground" title="Instagram"><i class="fa fa-instagram"></i></a></li>
+                                                            </ul>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <hr>
+                        <div class="content-article">
+                            <p> Berdirinya Website agansarjana ini untuk memberikan pengetahuan, informasi, pembelajaran, promosi produk dan lain lain... </p>
+                            <p> agansarjana tentunya ingin membantu anda, yang terkadang menjadi masalah untuk kita, seperti bagaimana mempromosikan karya/bisnis kita agar terkenal dan bisa diketahui banyak orang dan yang tentunya gratis ya... hehehe. </p>
+                            <p> So bagi anda yang mempunyai karya atau usaha/bisnis kami bisa mempublikasikanya/mempromosikan lewat website dan akun sosial media agansarjana dengan mengatas namakan karya anda, dan hal yang menarik dari penawaran ini tanpa
+                                biaya sedikitpun... menarikkan huhuhu. So jangan lewatkan kesempatan ini. untuk teknisnya bisa hubungi Kami. No Whatsapp: 089668354665 </p>
+                        </div>
+                        <!-- akhir -->
+                    </div>
+                </div>
+            </div>
+
+
+
+            <!-- Sisi Kanan -->
+            <div class="col-lg-4 col-md-4 col-sm-4 hidden-xs">
+                <div class="widget-sidebar font-lato">
+                    <aside>
+                        <h3 class="widget-title"><span class="glyphicon glyphicon-fire"></span> Populer </h3>
+                        <div class="row">
+                            <div class="col-md-12">
+                                <div class="row">
+                                    <!-- gambar -->
+                                    <div class="col-md-5">
+                                        <img class="img-responsive" src="http://placehold.it/260x180" alt="">
+                                    </div>
+                                    <!-- judul -->
+                                    <div class="col-md-7 margin-populer">
+                                        <div><a href="recent.html">Rumah Idaman Desain Tradisional</a></div>
+                                        <small><i class="glyphicon glyphicon-user"></i> by AganSarjana</small>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <hr class="hr-populer">
+                        <div class="row">
+                            <div class="col-md-12">
+                                <div class="row">
+                                    <!-- gambar -->
+                                    <div class="col-md-5">
+                                        <img class="img-responsive" src="http://placehold.it/260x180" alt="">
+                                    </div>
+                                    <!-- judul -->
+                                    <div class="col-md-7 margin-populer">
+                                        <div><a href="recent.html">Rumah Idaman Desain Tradisional</a></div>
+                                        <small><i class="glyphicon glyphicon-user"></i> by AganSarjana</small>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <hr class="hr-populer">
+                        <div class="row">
+                            <div class="col-md-12">
+                                <div class="row">
+                                    <!-- gambar -->
+                                    <div class="col-md-5">
+                                        <img class="img-responsive" src="http://placehold.it/260x180" alt="">
+                                    </div>
+                                    <!-- judul -->
+                                    <div class="col-md-7 margin-populer">
+                                        <div><a href="recent.html">Rumah Idaman Desain Tradisional</a></div>
+                                        <small><i class="glyphicon glyphicon-user"></i> by AganSarjana</small>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <hr class="hr-populer">
+                        <div class="row">
+                            <div class="col-md-12">
+                                <div class="row">
+                                    <!-- gambar -->
+                                    <div class="col-md-5">
+                                        <img class="img-responsive" src="http://placehold.it/260x180" alt="">
+                                    </div>
+                                    <!-- judul -->
+                                    <div class="col-md-7 margin-populer">
+                                        <div><a href="recent.html">Rumah Idaman Desain Tradisional</a></div>
+                                        <small><i class="glyphicon glyphicon-user"></i> by AganSarjana</small>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <hr class="hr-populer">
+                    </aside>
+
+                    <!-- Terkini -->
+                    <aside>
+                        <h3 class="widget-title"><span class="glyphicon glyphicon-thumbs-up"></span> Rekomendasi </h3>
+                        <ul class="margin-populer">
+
+                            <li>
+                                <a href="recent.html">Rumah Idaman Desain Tradisional</a>
+                            </li>
+                            <li>
+                                <a href="recent1.html">Bahan Rumah Tradisional</a>
+                            </li>
+                        </ul>
+                    </aside>
+
+                    <!-- Arsip post -->
+                    <aside>
+                        <h3 class="widget-title"><i class="fa fa-id-card-o" aria-hidden="true"></i> Arsip </h3>
+                        <div id="accordion">
+                            <h3 class="sectiondropdown">Augst 2017<i class="fa fa-caret-down" aria-hidden="true"></i></h3>
+                            <ul>
+                                <li><a href="#"> Bangunan tertinggi di dunia </a></li>
+                                <li><a href="#"> Bangunan tertinggi di dunia </a></li>
+                                <li><a href="#"> Bangunan tertinggi di dunia </a></li>
+                                <li><a href="#"> Bangunan tertinggi di dunia </a></li>
+                                <li><a href="#"> Bangunan tertinggi di dunia </a></li>
+                            </ul>
+                            <h3 class="sectiondropdown">Sept 2017<i class="fa fa-caret-down" aria-hidden="true"></i></h3>
+                            <ul>
+                                <li><a href="#"> Bangunan tertinggi di dunia </a></li>
+                                <li><a href="#"> Bangunan tertinggi di dunia </a></li>
+                                <li><a href="#"> Bangunan tertinggi di dunia </a></li>
+                                <li><a href="#"> Bangunan tertinggi di dunia </a></li>
+                                <li><a href="#"> Bangunan tertinggi di dunia </a></li>
+                            </ul>
+                        </div>
+                    </aside>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- footer -->
+    <div class="footer text-center">
+        <div class="col-md-12 ">
+            <h4>Contact Me </h4>
+            <ul class="social-network social-circle">
+                <li><a href="https://www.facebook.com/herdita.doank?fref=ts" class="icoFacebook ground" title="Facebook"><i class="fa fa-facebook"></i></a></li>
+                <li><a href="https://plus.google.com/u/0/105145055909010807966" class="icoGoogle ground" title="Google +"><i class="fa fa-google-plus"></i></a></li>
+                <li><a href="https://www.instagram.com/herditapermana/" class="icoInstagram ground" title="Instagram"><i class="fa fa-instagram"></i></a></li>
+                <li><a href="#" class="icoYoutube ground" title="Youtube"><i class="fa fa-youtube"></i></a></li>
+            </ul><br><br>
+            <div><span class="glyphicon glyphicon-copyright-mark ukuran-mark"></span>2017 Herdita permana <small><i>Student-Unikom</i></small></div>
+        </div>
+    </div>
+
+    <!-- fanspage facebook -->
+    <div class='mas_tamvan'>
+        <div id='tamvan-back'>
+            <div id='tamvan-exit'> </div>
+            <div id='tamvan-box'>
+                <div class='tamvan-box-inner'>
+                    <div id='tamvan-close'>
+                        <img src='https://upload.wikimedia.org/wikipedia/commons/4/44/Curation_bar_icon_close.png' />
+                    </div>
+                    <iframe src="https://www.facebook.com/plugins/page.php?href=https%3A%2F%2Fwww.facebook.com%2Fagansarjana%2F&tabs=tabs%2Fdata-tabs&width=320&height=214&small_header=false&adapt_container_width=true&hide_cover=false&show_facepile=true&appId" width="340"
+                        height="214" style="border:none;overflow:hidden" scrolling="no" frameborder="0" allowTransparency="true"></iframe>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- include jQuery -->
+    <script src="https://code.jquery.com/jquery-1.10.2.min.js"></script>
+    <!-- include jQuery UI -->
+    <script src="https://code.jquery.com/ui/1.11.4/jquery-ui.min.js"></script>
+
+    <!-- navtabs drag -->
+    <script src="../js/navtab.js"></script>
+    <!-- arsip post -->
+    <script src="../js/arsip.js"></script>
+    <!-- fanspage-facebook -->
+    <script src="../js/fanspage.js"></script>
+
+    <!-- bootstrap -->
+    <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+    <!-- Include all compiled plugins (below), or include individual files as needed -->
+    <script src="../js/bootstrap.min.js"></script>
+
+    <!-- recent post -->
+    <script src="https://code.jquery.com/ui/1.12.0-beta.1/jquery-ui.min.js" integrity="sha256-WyjlLy3rvVSitHOXMctYkMCOU6GAletPg+qniNKLCQM=" crossorigin="anonymous"></script>
+    <script src="../js/drop.js"></script>
+
+    <!-- chatting -->
+    <script src="../js/cbox.js"></script>
+    <script src="https://static.cbox.ws/embed/1.js" async></script>
+
+    <!-- about -->
+    <script>
+        $(document).ready(function() {
+            var panels = $('.user-infos');
+            var panelsButton = $('.dropdown-user');
+            panels.hide();
+
+            //Click dropdown
+            panelsButton.click(function() {
+                //get data-for attribute
+                var dataFor = $(this).attr('data-for');
+                var idFor = $(dataFor);
+
+                //current button
+                var currentButton = $(this);
+                idFor.slideToggle(400, function() {
+                    //Completed slidetoggle
+                    if (idFor.is(':visible')) {
+                        currentButton.html('<i class="fa fa-chevron-up text-muted"></i>');
+                    } else {
+                        currentButton.html('<i class="fa fa-chevron-down text-muted"></i>');
+                    }
+                })
+            });
+
+        });
+    </script>
+
+</body>
+
+</html>

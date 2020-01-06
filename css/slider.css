@@ -1,0 +1,17 @@
+ /* slider */
+ 
+ .carousel {
+     margin-bottom: 20px;
+ }
+ 
+ .carousel-caption {
+     position: absolute;
+     right: 0;
+     bottom: 0;
+     left: 0;
+     background: rgba(230, 230, 230, 0.4);
+ }
+ 
+ .carousel-caption p {
+     margin-bottom: 0;
+ }

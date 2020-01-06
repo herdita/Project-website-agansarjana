@@ -1,0 +1,114 @@
+/* artikel-home */
+
+.thumbnail1 {
+    border: transparent;
+}
+
+.img-edit {
+    border-radius: 2px;
+}
+
+
+/* artikel fonts and artikel seluruh*/
+
+.title-link {
+    margin-top: 20px;
+    color: gray;
+    margin-bottom: 20px;
+}
+
+.title-link a {
+    color: gray;
+    text-decoration: none;
+}
+
+.title-link a:hover {
+    color: black;
+}
+
+.title-article {
+    margin-top: 15px;
+    font-size: 21px;
+}
+
+.content-article {
+    text-align: left;
+    font-size: 15.5px;
+    line-height: 1.7;
+    font-family: "Helvetica", sans-serif;
+}
+
+.sub-judul {
+    margin-bottom: 10px;
+    font-size: 16px;
+}
+
+.margin-sub {
+    margin-bottom: 20px;
+}
+
+@media (max-width: 767px) {
+    .background-article {
+        background-color: whitesmoke;
+    }
+    .title-link {
+        margin-top: 25px;
+        color: gray;
+        margin-bottom: 20px;
+    }
+    .title-link a {
+        margin-top: 0px;
+    }
+    .content-article {
+        text-align: left;
+        font-size: 15px;
+    }
+    .title-article {
+        margin-top: 15px;
+        font-size: 20px;
+        text-align: center;
+    }
+    .margin-sub {
+        margin-bottom: 18px;
+    }
+}
+
+
+/* link mark */
+
+.a-blue {
+    color: blue;
+}
+
+
+/* keyword */
+
+.keybord {
+    font-size: 13px;
+}
+
+
+/* referensi */
+
+.margin-reperensi {
+    font-size: 13px;
+}
+
+
+/* share */
+
+.line-margin {
+    line-height: 30px;
+}
+
+
+/* referensi and share */
+
+@media (max-width:767px) {
+    .line-margin {
+        line-height: 30px;
+    }
+    .margin-reperensi li {
+        margin-left: -10px;
+    }
+}
